@@ -1,6 +1,5 @@
 const express = require('express');
-const Sequelize = require('sequelize');
-const { DataTypes } = Sequelize;
+const { Sequelize, DataTypes } = require('sequelize');
 
 
 const app = express();
