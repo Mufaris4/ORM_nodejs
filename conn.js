@@ -1,5 +1,5 @@
 const express = require('express');
-const { Sequelize, DataTypes } = require('sequelize');
+const Sequelize = require('sequelize');
 
 
 const app = express();
@@ -11,12 +11,12 @@ var con = new Sequelize('asd', 'root', '', {
 
 const user = con.define('user',{
 	uuid:{
-		type: DataTypes.UUID,
+		type: Sequelize.UUID,
 		primaryKey: true,
 		
 	},
-	name: DataTypes.Text,
-	bio: DataTypes.Text
+	name: Sequelize.Text,
+	bio: Sequelize.Text
 }) ;
 
 
